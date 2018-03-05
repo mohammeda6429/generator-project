@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
+ <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <style>
+    div {
+      background-color: black;
+    }
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <style>
-        div {
-            background-color: blue;
-            rect width= 300 height=100;
-            stroke-width:2;
-             width=400 
-             height=110
-             
-        }
+
 
         p {
             float: right
@@ -36,8 +33,8 @@
                 var adj = $("#adj").val()
                 //    var background = $("#background").val()
 
-                var story = "There once was a epic hero named " + name + ", " +
-                    name + " who was also known as " + adj + ".";
+                var story = "He was an average person by day named " + name + ", " +
+                    name + " but by night they call him " + adj + "man.";
                 $("svg").css("fill", adj)
 
 
