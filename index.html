@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>jQuery Template</title>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script>
- 
-  
-  $(function(){;
-  
-  });
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        div {
+            background-color: blue;
+            rect width= 300 height=100;
+            stroke-width:2;
+             width=400 
+             height=110
+             
+        }
+
+        p {
+            float: right
+        }
+
+        svg {
+            float: right;
+        }
+    </style>
+
+    <script>
+        $(function() {
+
+            $('button').click(function() {
+
+                // var verb = $("#verb").val()
+                var name = $("#name").val()
+                var Element = $("#Element").val()
+                var adj = $("#adj").val()
+                //    var background = $("#background").val()
+
+                var story = "There once was a epic hero named " + name + ", " +
+                    name + " was also known as " + adj + ".";
+                $("svg").css("fill", adj)
+
+
+                $("button").click(function() {
+                    $("p").html(story);
+
+                    //    $('*').css('background-color'), background
+                });
+
+            });
+
+        });
     </script>
-  </head>
-  <body>
-  
-  </body>
+</head>
+
+<body>
+    <select>
+      <option value='Male'>Male
+      </option>
+      <option value='Female'>Female
+      </option>
+      </select><br> Your Name: <input id="name"><br> 
+      Element: <input id="background"><br> 
+      Adjective: <input id="adj"><br>
+    <button>cick here!</button>
+    <p>Fill in the blanks!</p>
+
+
+
+</body>
+
 </html>
